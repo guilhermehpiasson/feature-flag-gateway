@@ -25,3 +25,12 @@ Observação:
 set ff:ff-test "true"
 ```
 2. Exemplo de URL para consulta de uma FeatureFlag -> http://localhost:8080/api/v1/ff/ff-test
+
+### Teste
+
+Para testar a respectiva aplicação, basta disparar o seguinte comando:
+```
+go test
+```
+Nessa ideia, sera executado um teste de integração, onde será chamada a rota api/v1/ff/ff-test e validado o código de retorno. No caso, se for igual a 200 a execução é aceita, do contrário a execução é rejeitada.s
+
